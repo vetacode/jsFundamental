@@ -5,3 +5,6 @@ alert(message) //Hello World!
 
 let infis = 1/0;
 alert(infis) //infinity
+
+let notNumber = 'anyString' / 2;
+alert(notNumber) //NaN
