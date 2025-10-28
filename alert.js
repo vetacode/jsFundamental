@@ -1,0 +1,1 @@
+alert("I'm javaScript from external source of code!")
