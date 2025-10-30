@@ -19,3 +19,14 @@ export default function calculator(a) {
 }
 
 calculator(3);
+
+let x = 1,
+  y = 1;
+
+let w = ++x; // ?
+let z = y++; // ?
+
+console.log('x:', x);
+console.log('y:', y);
+console.log('w:', w);
+console.log('z:', z);
