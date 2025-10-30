@@ -30,3 +30,8 @@ console.log('x:', x);
 console.log('y:', y);
 console.log('w:', w);
 console.log('z:', z);
+
+let p = 0;
+console.log('hasil p++:', p++);
+
+console.log('hasil akhir p:', p);
