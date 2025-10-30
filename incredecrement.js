@@ -11,8 +11,11 @@ console.log('third b:', --b); //3
 
 //The prefix form returns the new value while the postfix form returns the old value (prior to increment/decrement).
 
-export default function () {
+export default function calculator(a) {
   let x = 10;
+  x += 2 * x + a;
 
-  return console.log(x);
+  return console.log(--x), console.log(x++), console.log(++x);
 }
+
+calculator(3);
