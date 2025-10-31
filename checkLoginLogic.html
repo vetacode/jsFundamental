@@ -7,19 +7,42 @@
   </head>
   <body>
     <script>
-      let user = prompt('Please log in', 'admin');
-      if (user.toLowerCase() == 'admin') {
+      let user = prompt('Please insert user name', 'admin');
+
+      if (user === null) {
+        alert('You click Cancel button, Canceled!');
+      } else if (user.toLowerCase() === 'admin') {
         let pass = prompt('input the password:', '');
-        if (pass == 'TheMaster') {
+        if (pass === 'TheMaster') {
           alert('Welcome!');
+        } else if (pass === '' || pass === null) {
+          alert('Blank Password: Canceled!');
         } else {
           alert('Wrong Password!');
         }
-      } else if (user == '') {
-        alert('Canceled');
+      } else if (user === '' || user === null) {
+        alert('Blank username, Canceled!');
       } else {
         alert(`I don't know you`);
       }
+
+      //   let user = prompt('Please log in', 'admin');
+
+      //   if (user === null || user === '') {
+      //     alert('Canceled');
+      //   } else if (user.toLowerCase() === 'admin') {
+      //     let pass = prompt('Input the password:', '');
+
+      //     if (pass === null || pass === '') {
+      //       alert('Blank Password: Canceled!');
+      //     } else if (pass === 'TheMaster') {
+      //       alert('Welcome!');
+      //     } else {
+      //       alert('Wrong Password!');
+      //     }
+      //   } else {
+      //     alert("I don't know you");
+      //   }
     </script>
   </body>
 </html>
