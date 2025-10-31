@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let company = prompt('Which company created JavaScript?', '');
+      company = company.toLowerCase();
+      company == 'netscape' ? alert('Awesome!') : alert('Wrong.');
+
+      //Shorter Syntax
+
+      company.toLowerCase() == 'netscape'
+        ? alert('You are Right!')
+        : alert('Try again!');
+    </script>
+  </body>
+</html>
