@@ -9,7 +9,12 @@
     <script>
       let user = prompt('Please log in', 'admin');
       if (user.toLowerCase() == 'admin') {
-        prompt('input the password:', '');
+        let pass = prompt('input the password:', '');
+        if (pass == 'TheMaster') {
+          alert('Welcome!');
+        } else {
+          alert('Wrong Password!');
+        }
       } else if (user == '') {
         alert('Canceled');
       } else {
