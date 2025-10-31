@@ -26,7 +26,7 @@ console.log(height ?? 100); // 0
 //The precedence of the ?? operator is the same as ||. They both equal 3 in the MDN table.
 //Due to safety reasons, JavaScript forbids using ?? together with && and || operators, unless the precedence is explicitly specified with parentheses.
 
-let y = 1 && 2 ?? 3; // Syntax error
+// let y = 1 && 2 ?? 3; // Syntax error
 
 let x = (1 && 2) ?? 3; // Works
 console.log(x); // 2
