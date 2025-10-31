@@ -15,34 +15,38 @@
         let pass = prompt('input the password:', '');
         if (pass === 'TheMaster') {
           alert('Welcome!');
-        } else if (pass === '' || pass === null) {
+        } else if (pass === '') {
           alert('Blank Password: Canceled!');
+        } else if (pass === null) {
+          alert('You clicked Cancel button: Canceled!');
         } else {
           alert('Wrong Password!');
         }
-      } else if (user === '' || user === null) {
+      } else if (user === '') {
         alert('Blank username, Canceled!');
       } else {
         alert(`I don't know you`);
       }
 
-      //   let user = prompt('Please log in', 'admin');
+      // let user = prompt('Please insert user name', 'admin');
 
-      //   if (user === null || user === '') {
-      //     alert('Canceled');
-      //   } else if (user.toLowerCase() === 'admin') {
-      //     let pass = prompt('Input the password:', '');
+      // if (user === null) {
+      //   alert('You clicked Cancel, Canceled!');
+      // } else if (user === '') {
+      //   alert('Blank username, Canceled!');
+      // } else if (user.toLowerCase() === 'admin') {
+      //   let pass = prompt('Input the password:', '');
 
-      //     if (pass === null || pass === '') {
-      //       alert('Blank Password: Canceled!');
-      //     } else if (pass === 'TheMaster') {
-      //       alert('Welcome!');
-      //     } else {
-      //       alert('Wrong Password!');
-      //     }
+      //   if (pass === null || pass === '') {
+      //     alert('Blank Password: Canceled!');
+      //   } else if (pass === 'TheMaster') {
+      //     alert('Welcome!');
       //   } else {
-      //     alert("I don't know you");
+      //     alert('Wrong Password!');
       //   }
+      // } else {
+      //   alert("I don't know you");
+      // }
     </script>
   </body>
 </html>
