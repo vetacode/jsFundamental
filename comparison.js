@@ -15,3 +15,6 @@ console.log(null >= 0); // (3) true
 console.log('undefined 1:', undefined > 0); // false (1)
 console.log('undefined 2:', undefined < 0); // false (2)
 console.log('undefined 3:', undefined == 0); // false (3)
+
+//Comparisons (1) and (2) return false because undefined gets converted to NaN and NaN is a special numeric value which returns false for all comparisons.
+//The equality check (3) returns false because undefined only equals null, undefined, and no other value.
