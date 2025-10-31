@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user = prompt('Please log in', 'admin');
+      if (user.toLowerCase() == 'admin') {
+        prompt('input the password:', '');
+      } else if (user == '') {
+        alert('Canceled');
+      } else {
+        alert(`I don't know you`);
+      }
+    </script>
+  </body>
+</html>
