@@ -16,3 +16,7 @@ do {
   console.log('nilai p:', p++);
 } while (p < 3);
 //do..while only used when we need the body of the loop to execute at least once regardless of the condition being truthy. Usually, the other form is preferred: while(…) {…}.
+
+//while – The condition is checked before each iteration.
+//do..while – The condition is checked after each iteration.
+//for (;;) – The condition is checked before each iteration, additional settings available.
