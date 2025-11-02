@@ -64,3 +64,15 @@ for (let a = 2; a <= m; a++) {
   }
   if (isPrime) console.log('angka prima:', a);
 }
+
+//Using label continue
+
+let x = 10;
+x = Number(x);
+
+nextPrime: for (let i = 2; i <= x; i++) {
+  for (let j = 2; j < i; j++) {
+    if (i % j === 0) continue nextPrime;
+  }
+  console.log('prima label:', i);
+}
