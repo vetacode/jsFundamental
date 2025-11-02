@@ -38,7 +38,7 @@ while (a < 3) {
 //An integer number greater than 1
 //it cannot be divided without a remainder by anything except 1 and itself.
 
-let n = 20;
+let n = 5;
 n = Number(n);
 for (let i = 2; i <= n; i++) {
   let isPrime = true;
@@ -51,17 +51,16 @@ for (let i = 2; i <= n; i++) {
   if (isPrime) console.log(i);
 }
 
-// for (let x = 2; x <= n; x++) {
-//   let isPrime = true;
-//   for (let y = 2; y < x; y++) {
-//     if (x % y === 0) {
-//       isPrime = false;
-//       break;
-//     }
-//   }
-//   if (isPrime) console.log(x);
-// }
+let m = 10;
+m = Number(m);
 
-// for (let i = 2; i <= n; i++) {
-
-// }
+for (let a = 2; a <= m; a++) {
+  let isPrime = true;
+  for (let j = 2; j < a; j++) {
+    if (a % j === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+  if (isPrime) console.log('angka prima:', a);
+}
