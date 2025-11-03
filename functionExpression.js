@@ -5,7 +5,8 @@ let favCoffee = function () {
 favCoffee();
 
 //Perbedaan function declaration vs expression
-//Declaration
+//Function Declarations are processed before the code block is executed. They are visible everywhere in the block.
+//Function Expressions are created when the execution flow reaches them.
 let age = 16; // take 16 as an example
 
 if (age < 18) {
