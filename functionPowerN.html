@@ -1,0 +1,37 @@
+<!-- Function pow(x,n)
+importance: 4
+Write a function pow(x,n) that returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.
+
+pow(3, 2) = 3 * 3 = 9
+pow(3, 3) = 3 * 3 * 3 = 27
+pow(1, 100) = 1 * 1 * ...* 1 = 1
+Create a web-page that prompts for x and n, and then shows the result of pow(x,n). -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function powFixed(x, n) {
+        if (n === 0) return 1;
+        if (n < 0) return 1 / powFixed(x, -n);
+        let result = x;
+        for (let i = 1; i < n; i++) {
+          result *= x;
+        }
+        return result;
+      }
+
+      let x = prompt('input x:', 2);
+      let n = prompt('input n:', 3);
+
+      if (true) {
+        alert(`The result is: ${powFixed(x, n)}`);
+      }
+    </script>
+  </body>
+</html>
