@@ -18,19 +18,3 @@ let age = 18;
 let welcome =
   age < 18 ? () => console.log('Hello!') : () => console.log('Greetings!');
 welcome();
-
-//rewrite with arrow function:
-function ask(question, yes, no) {
-  if (confirm(question)) yes();
-  else no();
-}
-
-ask(
-  'Do you agree?',
-  function () {
-    alert('You agreed.');
-  },
-  function () {
-    alert('You canceled the execution.');
-  }
-);
