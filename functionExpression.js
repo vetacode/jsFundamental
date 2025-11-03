@@ -43,4 +43,15 @@ if (age < 18) {
 
 welcome(); // ok now
 
-//simplifying the
+//simplifying the code:
+
+welcome =
+  age < 18
+    ? function () {
+        console.log('Hello From Simpler Code!');
+      }
+    : function () {
+        console.log('Greetngs From Simpler Code!');
+      };
+
+welcome(); // ok now
