@@ -36,6 +36,8 @@ function sum(a, b) {
 let result = sum(1, 2);
 console.log(result);
 
+//Functions should be short and do exactly one thing.
+
 /*
 Naming Conventions for Functions
 Function names should be verbs, because functions are actions. Examples of good function names:
