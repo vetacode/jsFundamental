@@ -30,7 +30,7 @@ showCount(null); // unknown
 showCount(); // unknown
 
 function sum(a, b) {
-  return a + b;
+  return a + b; //A function can return a value. If it doesn’t, then its result is undefined.
 }
 
 let result = sum(1, 2);
