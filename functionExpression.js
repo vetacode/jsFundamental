@@ -43,8 +43,7 @@ if (age < 18) {
 
 welcome(); // ok now
 
-//simplifying the code:
-
+//Function Expression can simplifying the code with conditional declaration
 welcome =
   age < 18
     ? function () {
@@ -55,3 +54,12 @@ welcome =
       };
 
 welcome(); // ok now
+
+//Rule of Thumb when to use:
+// Function Declaration:
+// 1. The syntax gives more freedom in how to organize our code, because we can call such functions before they are declared.
+// 2. better for readability, as it’s easier to look up.
+// 3. Function Declarations are more “eye-catching”.
+
+//Function Expression:
+// if we need a conditional declaration
