@@ -22,9 +22,32 @@ namaMember(nama); //Nama Member: Bob (Bukan Mosley, walaupun Global variable) //
 //nullish coalescing operator (??)
 function showCount(count) {
   // if count is undefined or null, show "unknown"
-  alert(count ?? 'unknown');
+  console.log(count ?? 'unknown');
 }
 
 showCount(0); // 0 //if it was using || operator, it would show 'unknown' because 0 is a falsy value
 showCount(null); // unknown
 showCount(); // unknown
+
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(1, 2);
+console.log(result);
+
+/*
+Naming Conventions for Functions
+Function names should be verbs, because functions are actions. Examples of good function names:
+Function starting with…
+ "get…" – return a value,
+"calc…" – calculate something,
+"create…" – create something,
+"check…" – check something and return a boolean, etc.
+
+showMessage(..)     // shows a message
+getAge(..)          // returns the age (gets it somehow)
+calcSum(..)         // calculates a sum and returns the result
+createForm(..)      // creates a form (and usually returns it)
+checkPermission(..) // checks a permission, returns true/false
+*/
