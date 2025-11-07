@@ -32,4 +32,8 @@ for (; q < 3; ) console.log('bilai q:', q++);
 
 //bisa juga hilangkan semua bagian (begin;condition;step)
 let z = 0;
-for (;;) console.log('nilai z;', z); //akan membuat infinite loops
+// for (;;) console.log('nilai z;', z); //akan membuat infinite loops
+
+for (let i = 0; i <= 5; i++) {
+  console.log(i);
+}
