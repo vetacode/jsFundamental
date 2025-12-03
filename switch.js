@@ -1,3 +1,5 @@
+'use strict';
+
 let day = 'Sunday';
 switch (day) {
   case 'Sunday':
@@ -29,7 +31,7 @@ switch (arg) {
     console.log('An unknown value');
 }
 
-let browser = 1;
+let browser = 'Chrome';
 switch (browser) {
   case 'Edge':
     console.log("You've got the Edge!");
@@ -58,7 +60,7 @@ if (browser === 'Edge') {
 } else console.log('We hope that this page looks ok!');
 
 //convert to switch!
-let a = 1;
+let a = 2;
 
 // if (a == 0) {
 //   alert(0);
@@ -71,7 +73,7 @@ let a = 1;
 //   alert('2,3');
 // }
 
-switch (2) {
+switch (a) {
   case 0:
     console.log(0);
     break;
